@@ -3,11 +3,22 @@
     "./src",
   ],
   "files": [
-    "./node_modules/@dalongrong/njs-types/ngx_http_js_module.d.ts",
+    "node_modules/@dalongrong/njs-types/ngx_core.d.ts",
+    "node_modules/@dalongrong/njs-types/ngx_http_js_module.d.ts",
+    "node_modules/@dalongrong/njs-types/ngx_stream_js_module.d.ts",
+    "node_modules/@dalongrong/njs-types/njs_core.d.ts",
+    "node_modules/@dalongrong/njs-types/njs_shell.d.ts",
+    "node_modules/@dalongrong/njs-types/njs_webcrypto.d.ts",
+    "node_modules/@dalongrong/njs-types/njs_modules/crypto.d.ts",
+    "node_modules/@dalongrong/njs-types/njs_modules/fs.d.ts",
+    "node_modules/@dalongrong/njs-types/njs_modules/querystring.d.ts"
   ],
   "compilerOptions": {
     "outDir": "./lib",
     "target": "ES5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "module": "es2015",                                /* Specify what module code is generated. */
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */

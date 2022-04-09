@@ -1,0 +1,12 @@
+{
+  "name": "njs-ts-apps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@dalongrong/njs-types": "^0.7.2"
+  },
+  "scripts": {
+    "app":"tsc"
+  }
+}

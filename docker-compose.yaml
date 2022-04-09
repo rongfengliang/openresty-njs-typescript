@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    image: dalongrong/openresty-tengine:debug-perf
+    volumes:
+      - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+      - "./css/:/usr/local/openresty/nginx/html/"
+      - "./lib/app.js:/usr/local/openresty/nginx/html/app.js"
+    privileged: true
+    cap_add:
+       - ALL
+    ports:
+      - "80:80"
+  app2:
+    image: dalongrong/openresty-tengine:latest
+  app3:
+    image: dalongrong/openresty-tengine:latest
